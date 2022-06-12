@@ -1,14 +1,16 @@
 .bar-main {
   height: 100vh;
-  display: grid;
-  grid-template-rows: 1fr 9fr;
-  row-gap: 0.5em;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
 }
 
 .bar-space {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
+  flex-grow: 1;
 }
 
 .bar-main .controls {
@@ -17,10 +19,12 @@
   flex-direction: row;
   justify-content: end;
   padding: 0.25em;
+  margin-bottom: 0.5em;
 }
 
 .bar-main .controls button {
   margin: 0.25em;
+  padding: 0.5em;
 }
 
 /* .App {
